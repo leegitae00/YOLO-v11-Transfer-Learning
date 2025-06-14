@@ -38,6 +38,9 @@ clothes_dataset/
 ```yaml
 names: ['blazer', 'cardigan', 'coat', 'cottonpants', 'denimpants', 'hoodies', 'jacket', 'longsleeve', 'mtm', 'padding', 'shirt', 'shortpants', 'shortsleeve', 'skirt', 'slacks', 'sweater', 'trainingpants', 'zipup']
 
+```
+
+---
 
 ## 🚀 Training Command
 yolo train \
@@ -63,7 +66,6 @@ yolo predict \
   save=True
 
 
-📚 Reference
+## 📚 Reference
 Ultralytics YOLOv11 GitHub
-
 Roboflow Dataset Tools
