@@ -6,7 +6,7 @@ This project applies **transfer learning** on the YOLOv11 (Ultralytics YOLOv8-co
 
 ## 📌 Project Overview
 
-- **Base Model**: YOLOv11 (`yolov8n.pt`)
+- **Base Model**: YOLOv11 (`yolov11n.pt`)
 - **Task**: Object detection of fine-grained clothing types
 - **Dataset**: 9,517 images (train: 7,482 / val: 1,016 / test: 1,019)
 - **Classes**: 18 clothing categories (e.g., hoodie, blazer, cardigan, etc.)
@@ -17,6 +17,7 @@ This project applies **transfer learning** on the YOLOv11 (Ultralytics YOLOv8-co
 
 ## 🗂 Dataset Structure
 
+```
 clothes_dataset/
 ├── images/
 │ ├── train/
@@ -27,6 +28,7 @@ clothes_dataset/
 │ ├── val/
 │ └── test/
 └── data.yaml
+```
 
 - Each `.txt` label file follows the format: class_id x_center y_center width height # all values normalized (0~1)
 
@@ -44,7 +46,7 @@ names: ['blazer', 'cardigan', 'coat', 'cottonpants', 'denimpants', 'hoodies', 'j
 
 ## 🚀 Training Command
 yolo train \
-  model=yolov8n.pt \
+  model=yolov11n.pt \
   data=clothes_dataset/data.yaml \
   epochs=50 \
   imgsz=640 \
